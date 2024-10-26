@@ -1,5 +1,3 @@
-
-
 def get_construction_industry_specifics():
     return """Introduction to the Construction Industry: The construction industry encompasses a wide range of activities related to building infrastructure, residential and commercial properties, and public works. It involves complex contractual relationships between various parties, such as clients and vendors. A crucial aspect of these contracts is the specification of insurance requirements that vendors must meet to protect against potential risks and liabilities associated with construction projects.
 Key Terms:-

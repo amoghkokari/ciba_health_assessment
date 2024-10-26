@@ -1,9 +1,17 @@
+from os import environ
 import google.generativeai as genai
-from ciba_health_assessment.app.core.config import gamini_llm_api_key
 
 def GeminiClient():
-    llm_api_key = gamini_llm_api_key if gamini_llm_api_key else ""
+    llm_api_key = environ.get('LLM_API_KEY')
     genai.configure(api_key=llm_api_key)
-    model = genai.GenerativeModel(model_name = "gemini-pro")
+    gen_config = genai.GenerationConfig(temperature=0.0, top_p=1, top_k=1)
+    model = genai.GenerativeModel(model_name = "gemini-1.0-pro", generation_config = gen_config)
     
     return model
+
+    # candidate_count: int | None = None
+    # stop_sequences: Iterable[str] | None = None
+    # max_output_tokens: int | None = None
+    # temperature: float | None = None
+    # top_p: float | None = None
+    # top_k: int | None = None
