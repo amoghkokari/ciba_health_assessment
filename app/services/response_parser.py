@@ -2,12 +2,12 @@ from app.services.llm_client import GeminiClient
 from json import loads as jLoads, dumps as jDumps
 from re import search, DOTALL
 
-def parse_response(response: dict) -> str:
+def parse_response(response) -> str:
     """
     Parses the LLM response to extract the required information.
 
     Args:
-        response (dict): The JSON response from the LLM.
+        response : The response from the LLM.
 
     Returns:
         str: The extracted information from the response.
