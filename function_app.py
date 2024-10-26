@@ -8,10 +8,10 @@ import json
 function_app = func.FunctionApp()
 
 @function_app.route(route="health", methods=["GET"])
-async def health_check(req: func.HttpRequest) -> func.HttpResponse:
+async def health(req: func.HttpRequest) -> func.HttpResponse:
     return func.HttpResponse("Healthy", status_code=200)
 
-@function_app.route(route="get_fields", methods=["POST"])
+@function_app.route(route="generate_response", methods=["POST"])
 async def generate_response(req: func.HttpRequest) -> func.HttpResponse:
     logger.info("Received request to generate response.")
     try:
