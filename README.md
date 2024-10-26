@@ -29,9 +29,9 @@ This project is an Azure Function that extracts insurance requirements from an i
 ### 1. Clone the Repository
 
 - Clone this repository to your local machine:
-- ```bash
-- git clone https://github.com/amoghkokari/ciba_health_assessment.git
-- cd ciba_health_assessment
+bash
+git clone https://github.com/amoghkokari/ciba_health_assessment.git
+cd ciba_health_assessment
 
 ### 2. Install Dependencies
 
