@@ -1,0 +1,1 @@
+gamini_llm_api_key = "AIzaSyDolrFGbWlYwsc3PNkCPkY_5b8qpQqsg9I"
