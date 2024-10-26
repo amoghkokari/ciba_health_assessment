@@ -1,9 +1,3 @@
-detailed instructions on how to set up and run the Azure Function locally
-
-Setup instructions.
-Environment variable details.
-How to run the function locally.
-
 # Insurance Requirements Extraction API - Azure Function
 
 This project is an Azure Function that extracts insurance requirements from an input insurance clause and returns a structured JSON output. The function leverages a backend LLM (Large Language Model) to generate responses.
