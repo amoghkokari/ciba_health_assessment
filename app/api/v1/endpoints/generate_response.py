@@ -17,6 +17,7 @@ async def generate_response(request: GenerateResponseRequest):
         
         # Call the LLM client to get a response
         parsed_response = get_parsed_response(prompt)
+        logger.info("Response successfully parsed")
 
         return GenerateResponseOutput(response=parsed_response)
 
