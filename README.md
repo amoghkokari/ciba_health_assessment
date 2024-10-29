@@ -16,7 +16,7 @@ This project is an Azure Function that extracts insurance requirements from an i
 
 ### Prerequisites
 
-- **Azure Functions Core Tools** (v3 or higher): Required for local development and testing.
+- **Azure Functions Core Tools** (v3 or higher): Required for local development and testing. - go to [https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local] select python and follow through, mac users will need to install xcode from app store
 - **Python 3.8+**: The runtime environment for the Azure Function.
 - **Visual Studio Code** (optional): Recommended IDE with the Azure Functions extension for easy management.
 
@@ -29,8 +29,8 @@ cd ciba_health_assessment
 
 ### 2. Install Dependencies
 
-- **clause_env** virtual environemnt contains all the installed packages, you can just change to that environemnt and try running the application (from root directory source clause_env/bin/activate )
-- **requirements.txt** file have all the required packeges you can directly do (from root directory pip install -r /path/to/requirements.txt) either in environment or virtual environment if you face any issues
+- **clause_env** virtual environemnt contains all the installed packages, create a new environment [python -m venv <myenvname>] and activate it (from root directory source <myenvname>/bin/activate )
+- **requirements.txt** file have all the required packeges you can directly do (from root directory [pip install -r /path/to/requirements.txt]) in virtual environment [python -m pip install -r /path/to/requirements.txt]) if you face any issues
 
 ## Environment Variables
 
